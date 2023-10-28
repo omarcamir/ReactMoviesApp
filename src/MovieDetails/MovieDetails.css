@@ -1,0 +1,91 @@
+.cover{
+    background-image: url('https://image.tmdb.org/t/p/w500//xA6sF6L1wSHEgn3PsAzYLoajQPI.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 75vh !important;
+}
+p{
+    margin-bottom: 0 !important;
+    word-wrap: break-word;
+}
+.cover::before{
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5)
+}
+
+.content{
+    top: 20%;
+}
+
+.details h6{
+    font-size: 1.4rem;
+}
+.details h2{
+    font-size: 3.5rem;
+}
+.details p{
+    font-size: 0.9rem;
+    word-spacing: 2px;
+}
+.details .circle {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius:50% !important;
+    -webkit-border-radius:50% !important;
+    -moz-border-radius:50% !important;
+    -ms-border-radius:50% !important;
+    -o-border-radius:50% !important;
+}
+.trailer{
+    border-right: 2px solid #fff;
+}
+.trailer p{
+    font-size: 0.9rem;
+}
+.details .circle,
+.trailer p{
+    cursor: pointer;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+.details .circle:hover{
+    border-color: #12B6DC !important;
+}
+.trailer p:hover{
+    color: #12B6DC !important;
+}
+.rate{
+    border-right: 2px solid #676464;
+}
+
+
+@media (max-width: 991px) {
+    /* Styles for small screens (up to 767.98px) */
+    .cover{
+        display: none;
+    }
+    .text-color {
+      color: #000 !important; /* Dark color for small screens */
+    }
+  }
+  
+  @media (min-width: 992px) {
+    /* Styles for medium screens (768px and larger) */
+    .text-color {
+      color: #fff; /* Light color for medium screens */
+    }
+    .text-color-lg{
+        color: #000 !important; /* Dark color for small screens */
+
+    }
+  }

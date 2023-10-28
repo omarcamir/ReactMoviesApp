@@ -1,0 +1,19 @@
+.card-img{
+    height: 400px !important;
+}
+
+.card-badge{
+    background-color: #148BB1 !important;
+    top: 0;
+    right: 0;
+    border-radius: 0 5px 0 5px !important;
+    -webkit-border-radius: 0 5px 0 5px !important;
+    -moz-border-radius: 0 5px 0 5px !important;
+    -ms-border-radius: 0 5px 0 5px !important;
+    -o-border-radius: 0 5px 0 5px !important;
+}
+.card-img,
+.card-badge{
+
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
